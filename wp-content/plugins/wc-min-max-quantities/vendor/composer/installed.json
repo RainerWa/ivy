@@ -1,0 +1,77 @@
+{
+    "packages": [
+        {
+            "name": "byteever/bytekit-settings",
+            "version": "dev-trunk",
+            "version_normalized": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:byteever/bytekit-settings.git",
+                "reference": "49c9d9488c0130356059b3d086e6d8487ca434ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byteever/bytekit-settings/zipball/49c9d9488c0130356059b3d086e6d8487ca434ef",
+                "reference": "49c9d9488c0130356059b3d086e6d8487ca434ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2025-12-11T09:07:47+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WooCommerceMinMaxQuantities\\ByteKit\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "support": {
+                "source": "https://github.com/byteever/bytekit-settings/tree/trunk",
+                "issues": "https://github.com/byteever/bytekit-settings/issues"
+            },
+            "abandoned": true,
+            "install-path": "../byteever/bytekit-settings"
+        },
+        {
+            "name": "byteever/plugin",
+            "version": "dev-trunk",
+            "version_normalized": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:byteever/plugin.git",
+                "reference": "c9b7019ff5fd17b22ca4ed9fafbbe5fc51df9133"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byteever/plugin/zipball/c9b7019ff5fd17b22ca4ed9fafbbe5fc51df9133",
+                "reference": "c9b7019ff5fd17b22ca4ed9fafbbe5fc51df9133",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2026-03-09T14:07:02+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WooCommerceMinMaxQuantities\\B8\\Plugin\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "support": {
+                "source": "https://github.com/byteever/plugin/tree/trunk",
+                "issues": "https://github.com/byteever/plugin/issues"
+            },
+            "install-path": "../byteever/plugin"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}
