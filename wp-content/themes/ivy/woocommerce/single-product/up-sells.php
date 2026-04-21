@@ -2,7 +2,7 @@
 /**
  * Override: Up-Sells (Verbundene Artikel) – mit Block-Style Mengenfeld
  *
- * Kopie von WooCommerce up-sells.php, angepasst für eigenes Mengenfeld und Button.
+ * Korrigiert: Produktlink schließt vor dem Formular.
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -27,15 +27,22 @@ if ( isset( $upsells ) && $upsells ) : ?>
 		?>
 		<li <?php wc_product_class( '', $product ); ?>>
 			<?php
-			// Bild, Titel, Preis etc. wie gewohnt:
+			// Produktlink öffnen
 			do_action( 'woocommerce_before_shop_loop_item' );
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 			do_action( 'woocommerce_shop_loop_item_title' );
 			do_action( 'woocommerce_after_shop_loop_item_title' );
-			// Mengenfeld + Button:
+			// Produktlink schließen
+//			do_action( 'woocommerce_after_shop_loop_item' );
+            echo '</a>';
+			// Mengenfeld + Button außerhalb des Links:
 			if ( $product->is_purchasable() && $product->is_in_stock() ) {
-				$min = $product->get_min_purchase_quantity();
-				$max = $product->get_max_purchase_quantity();
+                global $product;
+                if ( ! $product instanceof WC_Product ) {
+                    return;
+                }
+                $min = get_post_meta( $product->get_id(), '_wb_min_qty', true );
+                $max = get_post_meta( $product->get_id(), '_wb_max_qty', true );
 				$step = 1;
 				$input_id = uniqid('quantity_');
 				?>
@@ -62,7 +69,6 @@ if ( isset( $upsells ) && $upsells ) : ?>
 					</button>
 				</form>
 			<?php }
-			do_action( 'woocommerce_after_shop_loop_item' );
 			?>
 		</li>
 	<?php endforeach; ?>
