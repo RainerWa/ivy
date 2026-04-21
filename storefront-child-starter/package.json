@@ -1,0 +1,12 @@
+{
+  "name": "storefront-child-starter",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/app.min.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/app.min.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
