@@ -1,0 +1,13 @@
+@import 'variables';
+
+.site-header {
+  background: var(--color-bg);
+  .storefront-primary-navigation {
+    .col-full {
+      .cart-contents {
+        padding: 0
+      }
+    }
+  }
+}
+
