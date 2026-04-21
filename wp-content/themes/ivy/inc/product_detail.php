@@ -181,3 +181,32 @@ add_action('woocommerce_single_product_summary', function() {
     }
 }, 33);
 
+
+add_action('woocommerce_before_single_product_summary', function() {
+    global $post;
+    $hauptkategorie_slug = 'catering'; // Slug der gewünschten Hauptkategorie anpassen!
+    $hauptkategorie = get_term_by('slug', $hauptkategorie_slug, 'product_cat');
+    if (!$hauptkategorie) {
+        return;
+    }
+    // Alle Unterkategorien dieser Hauptkategorie holen
+    $unterkategorien = get_terms([
+        'taxonomy' => 'product_cat',
+        'parent' => $hauptkategorie->term_id,
+        'hide_empty' => false,
+    ]);
+    // Hole die Kategorien des aktuellen Produkts
+    $produkt_kategorien = wp_get_post_terms($post->ID, 'product_cat', ['fields' => 'ids']);
+    if ($unterkategorien && !is_wp_error($unterkategorien)) {
+        echo '<div class="ivy-subcategories" style="margin-bottom:1.5em">';
+        echo '<strong>Unterkategorien von ' . esc_html($hauptkategorie->name) . ':</strong> ';
+        echo '<ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:1em;">';
+        foreach ($unterkategorien as $cat) {
+            $link = get_term_link($cat);
+            $is_current = in_array($cat->term_id, $produkt_kategorien) ? ' current' : '';
+            echo '<li><a href="' . esc_url($link) . '" class="' . esc_attr($is_current) . '" style="text-decoration:underline;">' . esc_html($cat->name) . '</a></li>';
+        }
+        echo '</ul>';
+        echo '</div>';
+    }
+}, 5);
