@@ -246,3 +246,30 @@ add_filter( 'woocommerce_update_cart_validation', function ( $passed, $cart_item
 
 	return $passed;
 }, 10, 4 );
+
+/**
+ * Min/Max unterhalb des Preises im Shop-Loop anzeigen
+ */
+add_action( 'woocommerce_after_shop_loop_item_title', function() {
+    global $product;
+    if ( ! $product instanceof WC_Product ) {
+        return;
+    }
+    $min = get_post_meta( $product->get_id(), '_wb_min_qty', true );
+    $max = get_post_meta( $product->get_id(), '_wb_max_qty', true );
+    $min = (int) $min;
+    $max = (int) $max;
+    if ( $min < 1 ) {
+        $min = 1;
+    }
+    if ( $max < 1 ) {
+        $max = 0;
+    }
+    echo '<div class="wb-min-max-info" style="font-size:0.95em; color:#666; margin-top:0.3em;">';
+    if ( $max > 0 ) {
+        printf( __( 'Mindestmenge: %d &ndash; Maximalmenge: %d', 'your-textdomain' ), $min, $max );
+    } else {
+        printf( __( 'Mindestmenge: %d', 'your-textdomain' ), $min );
+    }
+    echo '</div>';
+}, 15 );

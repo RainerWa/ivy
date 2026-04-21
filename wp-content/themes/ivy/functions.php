@@ -73,3 +73,27 @@ function ivy_enqueue_quantity_selector_script() {
     );
 }
 add_action('wp_enqueue_scripts', 'ivy_enqueue_quantity_selector_script', 20100);
+
+/**
+ * Produktbeschreibung zwischen Preis und Bestellbutton anzeigen
+ */
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 15 );
+
+/**
+ * Produktbeschreibung (the_content) zwischen Preis und Bestellbutton anzeigen
+ */
+add_action('woocommerce_single_product_summary', function() {
+    global $post;
+    echo '<div class="product-long-description" style="margin-bottom:1.5em">';
+    echo apply_filters('the_content', get_post_field('post_content', $post->ID));
+    echo '</div>';
+}, 25);
+
+/**
+ * Beschreibungstab entfernen
+ */
+add_filter('woocommerce_product_tabs', function($tabs) {
+    unset($tabs['description']);
+    return $tabs;
+}, 98);
