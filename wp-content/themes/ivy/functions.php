@@ -7,6 +7,7 @@
 require_once get_stylesheet_directory() . '/inc/header.php';
 require_once get_stylesheet_directory() . '/inc/product_detail.php';
 require_once get_stylesheet_directory() . '/inc/woocommerce_min_max.php';
+require_once get_stylesheet_directory() . '/inc/checkout.php';
 
 // Tailwind CSS laden (build output, z.B. /dist/style.css)
 function ivy_enqueue_styles() {
