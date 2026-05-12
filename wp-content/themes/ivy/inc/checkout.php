@@ -67,3 +67,67 @@ add_filter('woocommerce_email_order_meta_fields', function($fields, $sent_to_adm
 
 // Entferne das Feld aus woocommerce_after_order_notes, falls noch vorhanden
 remove_action('woocommerce_after_order_notes', 'ivy_delivery_datetime');
+
+
+// Zahlungsarten entfernen (Checkout bleibt Anfrage)
+add_filter('woocommerce_cart_needs_payment', '__return_false');
+
+// Lieferadresse IMMER abfragen, auch bei virtuellen Produkten
+add_filter('woocommerce_cart_needs_shipping_address', '__return_true');
+
+// Checkbox "Rechnungsadresse ist abweichend" standardmäßig DEAKTIVIEREN (damit Rechnungsadresse nur bei Bedarf erscheint)
+add_filter('woocommerce_ship_to_different_address_checked', '__return_false');
+
+// Keine Felder entfernen oder als optional markieren – WooCommerce-Standardverhalten nutzen
+
+// Button-Text anpassen
+add_filter('woocommerce_order_button_text', function($text) {
+    return __('Anfrage absenden', 'ivy');
+});
+
+// Bestellung als Anfrage kennzeichnen und E-Mails versenden
+add_action('woocommerce_checkout_update_order_meta', function($order_id) {
+    update_post_meta($order_id, '_ivy_is_request', 1);
+});
+
+add_action('woocommerce_thankyou', function($order_id) {
+
+    $order = wc_get_order($order_id);
+    if (get_post_meta($order_id, '_ivy_is_request', true)) {
+        $admin_email = get_option('admin_email');
+        $customer_email = $order->get_billing_email();
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+
+        // Logging für Debugging
+        if (empty($admin_email)) {
+            error_log('IVY CATERING: Admin-E-Mail ist leer!');
+        }
+        if (empty($customer_email)) {
+            error_log('IVY CATERING: Kunden-E-Mail ist leer!');
+        }
+        // Betreiber-Mail
+        $admin_sent = wp_mail(
+            $admin_email,
+            'Neue Catering-Anfrage',
+            'Es ist eine neue Catering-Anfrage eingegangen. Bitte prüfen Sie die Bestellung im Backend.',
+            $headers
+        );
+
+        if (!$admin_sent) {
+            error_log('IVY CATERING: Betreiber-Mail konnte nicht gesendet werden!');
+        }
+        // Besteller-Mail
+        $customer_sent = wp_mail(
+            $customer_email,
+            'Ihre Catering-Anfrage ist eingegangen',
+            'Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich.',
+            $headers
+        );
+        if (!$customer_sent) {
+            error_log('IVY CATERING: Kunden-Mail konnte nicht gesendet werden!');
+        }
+    }
+});
+
+
+// Keine weiteren Checkout-Feld-Anpassungen nötig, damit WooCommerce-Standard greift
