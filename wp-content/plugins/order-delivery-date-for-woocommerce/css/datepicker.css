@@ -1,0 +1,450 @@
+.form-row-cart {
+	width: fit-content;
+}
+.orddd_lite_field_note {
+	font-size: 10px;
+}
+
+/* Date Picker Default Styles */
+.ui-datepicker {
+	padding: 0;
+	margin: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+	min-width: 17em;
+}
+
+.ui-datepicker * {
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-radius: 0;
+}
+
+.ui-datepicker table {
+	font-size: 13px;
+	margin: 0;
+	border: none;
+	border-collapse: collapse;
+}
+
+.ui-datepicker .ui-widget-header,
+.ui-datepicker .ui-datepicker-header {
+	background-image: none;
+	border: none;
+	font-weight: normal;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-state-hover {
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: relative;
+	top: 0;
+	height: 34px;
+	width: 34px;
+}
+
+.ui-datepicker .ui-state-hover.ui-datepicker-prev,
+.ui-datepicker .ui-state-hover.ui-datepicker-next {
+	border: none;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 0;
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 0;
+}
+
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+	background: none;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	float: left;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker .ui-datepicker-prev:before {
+	content: "";
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	border-left: 0.1em solid;
+	border-bottom: 0.1em solid;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-left: 0.6em;
+	font: normal 20px/34px 'dashicons';
+}
+
+.ui-datepicker .ui-datepicker-next:before {
+	content: "";
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	border-right: 0.1em solid;
+	border-top: 0.1em solid;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform: rotate(45deg);
+	margin-left: 0.6em;
+	font: normal 20px/34px 'dashicons';
+}
+
+.ui-datepicker .ui-datepicker-prev-hover:before,
+.ui-datepicker .ui-datepicker-next-hover:before {
+	opacity: 0.7;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 33%;
+}
+
+.ui-datepicker thead {
+	font-weight: 600;
+}
+
+.ui-datepicker th {
+	padding: 10px;
+}
+
+.ui-datepicker td {
+	padding: 0;
+	border: 1px solid #f4f4f4;
+}
+
+.ui-datepicker td.ui-datepicker-today {
+	background-color: #f0f0c0;
+}
+
+.ui-datepicker td.ui-datepicker-current-day {
+	background: #bbdd88;
+}
+
+.ui-datepicker td .ui-state-default {
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	display: block;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+
+.ui-datepicker td.ui-state-disabled .ui-state-default {
+	opacity: 0.5;
+}
+
+/* To hide the Today button in the calendar */
+.ui-datepicker-current { display: none; }
+
+@media only screen and (max-width: 768px) {
+	.ui-datepicker-multi-2 .ui-datepicker-group {
+    	width: 49%;
+    	margin-top: 20px;
+	}
+	.ui-datepicker-multi .ui-datepicker-group {
+    	float: none;
+	}
+}
+/* ===============================
+   Filters Card
+   =============================== */
+.orddd-filters-card {
+    background: #f1f1f5;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 30px 18px;
+    margin-bottom: 18px;
+}
+
+/* Filters Title */
+.orddd-filters-title {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+/* ===============================
+   Filters Layout
+   =============================== */
+.orddd-filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Each Field */
+.orddd-filter-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    margin-right: 10px;
+}
+
+/* Labels */
+.orddd-filter-field label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #1d2327;
+}
+
+/* ===============================
+   Select2 Styling
+   =============================== */
+
+/* Force width (override inline styles) */
+.orddd-filter-field .select2-container {
+    width: 160px !important;
+    min-width: 160px;
+    font-size: 14px;
+}
+
+/* Specific wider fields */
+#orddd_filter_by_order_status ~ .select2-container,
+#orddd_filter_by_order_shipping ~ .select2-container {
+    width: 230px !important;
+    min-width: 230px;
+}
+
+/* Single Select */
+div.orddd-filter-field .select2-container--default .select2-selection--single {
+    height: 32px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+div.orddd-filter-field .select2-selection--single .select2-selection__rendered {
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+/* Multi Select */
+div.orddd-filter-field .select2-container--default .select2-selection--multiple {
+    min-height: 32px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    padding: 2px 6px;
+    max-height: 66px;
+    overflow-y: auto;
+}
+
+/* Status / Choice Pills */
+div.orddd-filter-field .select2-selection__choice {
+    background: #f0f0f1 !important;
+    border: 1px solid #c3c4c7 !important;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 2px 6px;
+    margin: 3px 4px 0 0;
+    color: #1d2327;
+}
+
+/* Remove blue highlight for remove button */
+div.orddd-filter-field .select2-selection__choice__remove {
+    color: #50575e;
+}
+
+/* ===============================
+   Actions (Apply / CSV / Print)
+   =============================== */
+
+/* Filter Buttons Container */
+.orddd-filter-actions {
+    padding-top: 22px;
+}
+
+/* Apply Filters Button */
+#orddd_filter_calendar_data.button-primary {
+    height: 32px;
+    line-height: 30px;
+    padding: 0 14px;
+    font-size: 13px;
+}
+
+/* CSV & Print */
+.orddd-export-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.orddd-export-actions .button {
+    height: 32px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 13px;
+    background: #fff;
+}
+
+/* ===============================
+   Responsive Adjustments
+   =============================== */
+@media (max-width: 1200px) {
+    .orddd-filters-row {
+        flex-wrap: wrap;
+    }
+
+    .orddd-filter-actions {
+        padding-top: 10px;
+    }
+
+    /* Make all fields 100% width on small screens */
+    .orddd-filter-field {
+        min-width: 100%;
+    }
+
+    #orddd_filter_by_order_status ~ .select2-container,
+    #orddd_filter_by_order_shipping ~ .select2-container {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+}
+.fc .fc-button-group>.fc-button.fc-button-active {
+	background: #2271b1 !important;
+    border-color: #2271b1 !important;
+}
+.fc .fc-button-group>.fc-prev-button,.fc .fc-button-group>.fc-next-button, .fc .fc-button-group>.fc-today-button {
+	background: #2271b1 !important;
+    border-color: #2271b1;
+    text-transform: capitalize !important;
+    margin-right: 5px;
+    border-radius: 11%;
+}
+.fc .fc-button-group>.fc-button.fc-button-primary {
+	border-color: #ccc;
+    color: black;
+    background-color: #f0f0f1;
+    text-transform: capitalize;
+}
+.fc .fc-button-group>.fc-button.fc-button-primary span.fc-icon {
+	color: white;
+}
+button.fc-today-button.fc-button.fc-button-primary {
+    color: white !important;
+    background-color: #2271b1 !important;
+    opacity: 99;
+}
+#orddd_lite_time_slot ul li {
+    padding: 5px;
+    margin-left: 13px
+}
+
+#orddd_lite_time_slot ul {
+    margin-top: 9px;
+    background: #f2f2f2;
+    margin-left: 0;
+    width: 100%;
+    list-style: none
+}
+
+div#orddd_lite_time_slot input {
+    width: 100% !important
+}
+
+#orddd_lite_time_slot label {
+    text-transform: none !important
+}
+.fc-h-event .fc-event-title-container, div.fc-daygrid-event-harness {
+	cursor: pointer !important;
+}
+.orddd-tooltip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.orddd-tooltiptext {
+    position: absolute;
+    top: 165%;
+    right: 95%;                 /* show on right side */
+    transform: translateY(-50%);
+    background: #ffffff;
+    color: #1d2327;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 9999;
+}
+
+/* Tooltip arrow (left side) */
+.orddd-tooltiptext::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 80%;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+/* Show on hover */
+.orddd-tooltip:hover .orddd-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.orddd-export-actions {
+    overflow: visible;
+}
+.orddd-tooltiptext {
+    width: 150px;          /* decrease width */
+    max-width: 150px;
+    white-space: normal;  /* allow wrapping */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.orddd-tooltiptext {
+    width: 150px;
+}
+table.fc-scrollgrid-liquid .fc-scrollgrid-sync-inner a {
+    color: #1d2327;
+}
+
+
