@@ -5,6 +5,20 @@
 // Konfiguration: Mindestvorlauf in Tagen
 $ivy_min_days_ahead = 2;
 
+// Liefertermin fuer Ausgabe in E-Mails/Admin lesbar formatieren.
+function ivy_format_delivery_datetime($raw_value) {
+    if (empty($raw_value)) {
+        return '';
+    }
+
+    $date = DateTime::createFromFormat('Y-m-d\TH:i', $raw_value);
+    if (!$date) {
+        return $raw_value;
+    }
+
+    return $date->format('d.m.Y, H:i') . ' Uhr';
+}
+
 // Feld im Checkout über den Rechnungsdaten (linke Spalte) anzeigen
 add_action('woocommerce_before_checkout_billing_form', function() use ($ivy_min_days_ahead) {
     $checkout = WC()->checkout();
@@ -49,7 +63,7 @@ add_action('woocommerce_checkout_update_order_meta', function($order_id) {
 add_action('woocommerce_admin_order_data_after_billing_address', function($order){
     $datetime = get_post_meta($order->get_id(), '_ivy_delivery_datetime', true);
     if ($datetime) {
-        echo '<p><strong>' . __('Liefertermin', 'ivy') . ':</strong> ' . esc_html($datetime) . '</p>';
+        echo '<p><strong>' . __('Liefertermin', 'ivy') . ':</strong> ' . esc_html(ivy_format_delivery_datetime($datetime)) . '</p>';
     }
 });
 
@@ -59,7 +73,7 @@ add_filter('woocommerce_email_order_meta_fields', function($fields, $sent_to_adm
     if ($datetime) {
         $fields['ivy_delivery_datetime'] = array(
             'label' => __('Liefertermin', 'ivy'),
-            'value' => $datetime,
+            'value' => ivy_format_delivery_datetime($datetime),
         );
     }
     return $fields;
@@ -85,49 +99,16 @@ add_filter('woocommerce_order_button_text', function($text) {
     return __('Anfrage absenden', 'ivy');
 });
 
-// Bestellung als Anfrage kennzeichnen und E-Mails versenden
+// Bestellung als Anfrage kennzeichnen
 add_action('woocommerce_checkout_update_order_meta', function($order_id) {
     update_post_meta($order_id, '_ivy_is_request', 1);
 });
 
-add_action('woocommerce_thankyou', function($order_id) {
+// Betreff der Kundenmail (customer processing order) ueberschreiben.
+add_filter('woocommerce_email_subject_customer_processing_order', function($subject, $order) {
+    return 'Ihre Catering-Anfrage ist eingegangen';
+}, 10, 2);
 
-    $order = wc_get_order($order_id);
-    if (get_post_meta($order_id, '_ivy_is_request', true)) {
-        $admin_email = get_option('admin_email');
-        $customer_email = $order->get_billing_email();
-        $headers = array('Content-Type: text/html; charset=UTF-8');
-
-        // Logging für Debugging
-        if (empty($admin_email)) {
-            error_log('IVY CATERING: Admin-E-Mail ist leer!');
-        }
-        if (empty($customer_email)) {
-            error_log('IVY CATERING: Kunden-E-Mail ist leer!');
-        }
-        // Betreiber-Mail
-        $admin_sent = wp_mail(
-            $admin_email,
-            'Neue Catering-Anfrage',
-            'Es ist eine neue Catering-Anfrage eingegangen. Bitte prüfen Sie die Bestellung im Backend.',
-            $headers
-        );
-
-        if (!$admin_sent) {
-            error_log('IVY CATERING: Betreiber-Mail konnte nicht gesendet werden!');
-        }
-        // Besteller-Mail
-        $customer_sent = wp_mail(
-            $customer_email,
-            'Ihre Catering-Anfrage ist eingegangen',
-            'Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich.',
-            $headers
-        );
-        if (!$customer_sent) {
-            error_log('IVY CATERING: Kunden-Mail konnte nicht gesendet werden!');
-        }
-    }
-});
 
 
 // Keine weiteren Checkout-Feld-Anpassungen nötig, damit WooCommerce-Standard greift
