@@ -17,26 +17,19 @@ defined( 'ABSPATH' ) || exit;
 $current_term = get_queried_object();
 
 
-// Unterkategorien anzeigen, wenn vorhanden
-if (is_product_category()) {
-    $term = $current_term;
-    $term_id = $term->term_id;
-    $taxonomy = 'product_cat';
-    $child_terms = get_terms([
-            'taxonomy' => $taxonomy,
-            'parent' => $term_id,
-            'hide_empty' => false
-    ]);
-
-
-    if (!empty($child_terms) && !is_wp_error($child_terms)) {
-        echo '<div class="mb-8 flex flex-wrap gap-4">';
-        foreach ($child_terms as $child) {
-            $link = get_term_link($child);
-            echo '<a href="' . esc_url($link) . '" class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-primary/80">' . esc_html($child->name) . '</a>';
-        }
-        echo '</div>';
+// Parent-Kategorie des aktuellen Terms laden (falls vorhanden).
+$parent_term = null;
+if ( $current_term instanceof WP_Term && ! empty( $current_term->parent ) ) {
+    $parent_term = get_term( (int) $current_term->parent, 'product_cat' );
+    if ( is_wp_error( $parent_term ) ) {
+        $parent_term = null;
     }
+}
+
+
+// Unterkategorien anzeigen, wenn vorhanden
+if ( is_product_category() && $parent_term instanceof WP_Term ) {
+    ivy_render_product_category_links( $parent_term->term_id, false, $current_term->term_id );
 }
 ?>
 

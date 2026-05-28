@@ -5,6 +5,7 @@
  * @package Ivy
  */
 require_once get_stylesheet_directory() . '/inc/header.php';
+require_once get_stylesheet_directory() . '/inc/product_categories.php';
 require_once get_stylesheet_directory() . '/inc/product_detail.php';
 require_once get_stylesheet_directory() . '/inc/woocommerce_min_max.php';
 require_once get_stylesheet_directory() . '/inc/checkout.php';
