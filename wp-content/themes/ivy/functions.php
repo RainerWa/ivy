@@ -62,6 +62,8 @@ add_action( 'init', function() {
     remove_action('storefront_sidebar', 'storefront_get_sidebar', 10);
     // Entfernt Sidebar-Widgets aus WooCommerce-Hooks
     remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+    // Blendet die Storefront-Breadcrumb auf allen Seiten aus.
+    remove_action('storefront_before_content', 'woocommerce_breadcrumb', 10);
     // Optional: Entfernt Sidebar-Regionen aus dem Customizer
     unregister_sidebar('sidebar-1');
 });
