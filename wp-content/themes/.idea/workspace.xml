@@ -4,169 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f75335e4-9d24-4090-8987-85280c9fe64f" name="Changes" comment="min max">
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/assets/flexdatalist/jquery.flexdatalist.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/assets/flexdatalist/jquery.flexdatalist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/assets/flexdatalist/jquery.flexdatalist.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/assets/flexdatalist/jquery.flexdatalist.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/colpick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/fontawesome4-compat.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/fontawesome5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/fontawesome5.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/global-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/import-export.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/css/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/Feature-request-form-title.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/Feature-request.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/Thank-you.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/ad_white_on_orange.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/br_logo_white.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/submenu-icon-a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/images/submenu-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/js/admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/js/colpick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/js/import-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/popup/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/popup/br_popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/popup/br_popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/tippy/tippy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/tippy/tippy.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/assets/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/framework.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/framework_version.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/admin/admin_bar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/admin/import_export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/admin/import_export_conditions_export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/admin/import_export_conditions_import.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/admin_notices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/conditions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/custom_post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/custom_post/enable_disable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/custom_post/sortable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/error_notices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/information_notices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/libraries.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/plugin-variation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/settings_fields.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/updater.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/includes/widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/languages/BeRocket_domain-en_US.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/languages/BeRocket_domain-en_US.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/languages/BeRocket_domain-ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/languages/BeRocket_domain-ru_RU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/languages/BeRocket_domain.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/addons/addon_lib.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/addons/addons.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/addons/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/check_init.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/feature_tab.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/popup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/templates/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/templates/template_lib.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/templates/templates.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/tippy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/tutorial.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/libraries/wpml_compatibility.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/sale/cyber.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/sale/friday.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/sale/sale.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/templates/conditions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/templates/premium.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/templates/settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/templates/settings_footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/berocket/templates/widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/css/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/images/44p_sale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/addons/attribute_limitation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/addons/set_input_limitation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/addons/variation_text.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/admin/funnels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/custom_post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/includes/import_export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/js/admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/js/frontend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/languages/minmax-quantity-for-woocommerce-ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/languages/minmax-quantity-for-woocommerce-ru_RU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/languages/minmax-quantity-for-woocommerce.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/loco.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/woocommerce-minmax-quantity.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/minmax-quantity-for-woocommerce/wpml-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/assets/build/css/admin-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/assets/build/css/admin.asset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/assets/build/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/assets/build/images/plugin-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/Actions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/Admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/MetaBoxes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/Notices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/Settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/views/notices/review.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/views/notices/special-offer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Admin/views/notices/upgrade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Installer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/Plugin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/includes/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/languages/wc-min-max-quantities.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/bytekit-settings/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/bytekit-settings/src/Admin/Settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/bytekit-settings/src/assets/js/settings.asset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/bytekit-settings/src/assets/js/settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/App.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Container/Container.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Container/ContainerException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Container/ContainerInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Filesystem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Flash.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Logger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Notices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Options.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Request.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Scripts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Services/Template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Traits/HookableTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/Traits/PathableTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/assets/css/components.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/byteever/plugin/src/assets/css/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/InstalledVersions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_aliases.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/installed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/vendor/composer/platform_check.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/wc-min-max-quantities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plugins/wc-min-max-quantities/wc-minmax-quantities.php" beforeDir="false" />
-    </list>
+    <list default="true" id="f75335e4-9d24-4090-8987-85280c9fe64f" name="Changes" comment="min max" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rainer/Local Sites/ivy/app/public/wp-content/themes/ivy/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rainer/Local Sites/ivy/app/public/wp-content/themes/ivy/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ivy/src" />
@@ -245,6 +83,7 @@
       <updated>1776679229588</updated>
       <workItem from="1776679230751" duration="17985000" />
       <workItem from="1778593689055" duration="103000" />
+      <workItem from="1779197731426" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
