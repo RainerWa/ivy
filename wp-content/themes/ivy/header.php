@@ -27,7 +27,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+	<header id="masthead" class="site-header" role="banner" style="<?php if ( function_exists( 'storefront_header_styles' ) ) { storefront_header_styles(); } ?>">
 
 		<?php
 		/**
