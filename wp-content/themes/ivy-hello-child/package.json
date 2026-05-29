@@ -1,7 +1,7 @@
 {
   "name": "ivy-child-theme",
   "version": "1.0.0",
-  "description": "Child Theme für Storefront mit Tailwind CSS",
+  "description": "Child Theme mit Tailwind CSS",
   "scripts": {
     "build:scss": "sass src/global.scss dist/global.css --no-source-map --style=compressed",
     "build:tailwind": "tailwindcss -c tailwind.config.js -i ./src/input.css -o ./dist/style.css --minify",
